@@ -22,7 +22,7 @@ podTemplate(cloud: "kubernetes", containers: [
                     sh "ls -la"
                     sh "mkdir test"
                     sh "ls -la"
-                    sh "It works!!!!!"
+                    sh "echo 'It works!!!!!'"
                 }
                 catch (exc) {
                     println "Failed the Workspace Check - ${currentBuild.fullDisplayName}"
