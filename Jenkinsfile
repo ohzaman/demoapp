@@ -3,7 +3,7 @@
 //Set Pod Templates for the Java build
 podTemplate(cloud: "kubernetes", containers: [
     //Use Alpine where possible
-    containerTemplate(name: 'jnlp', image: 'jenkinsci/jnlp-slave:alpine', ttyEnabled: true, alwaysPullImage: true),
+    containerTemplate(name: 'jnlp', image: 'jenkinsci/jnlp-slave:alpine', ttyEnabled: true, alwaysPullImage: true)
 ]) {
     node(POD_LABEL) {
         //Checkout code from GitHub
